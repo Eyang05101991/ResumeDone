@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--to do
+    when the button shifter moves the background picture changes. 
+-->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--this link below gives you access to bootstraps awesome icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--######################## Header Section ########################-->
+    <section id="header">
+        <div class="container text-center">
+            <div class="user-box">
+                <img src="eddie.jpg">
+                <h1>Edward J. Yang</h1>
+                <p>Aspiring Web Developer</p>
+            </div>
+        </div>
+        <div class="scroll-btn">
+            <div class="scroll-bar">
+                <a href="#about">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--#################### User Info Section #############################-->
+    <section id="user-info">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+                <!--The <a href="#" is calling on the scroll javascript on the very bottom. -->
+                <a class="navbar-brand" href="#"><img src="logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <!--ml-auto moves all elments inside the vabar to the right. -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#top">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--###################### ABOUT ME SECTION #######################-->
+        <div class="about container" id="about">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="profile.jpg" class="profile-img">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h3>WHO AM I?</h3>
+                    <br>
+                    <br>
+                    <p class="aboutMe">
+                        My name is Edward, but I prefer Eddie.<br>
+                        I dont like peanut butter, I like jelly.<br>
+                        Born in a hospital somewhere in Tacoma,<br>
+                        could've been Oklahoma, judging by the aroma.<br>
+                        I love to go fishing, the coast is my playground<br>
+                        Jaws has nothing on me, the fish get nervous break downs.<br>
+                        I get nervous break downs, can't see where the bugs are,<br>
+                        Screaming "I'm missing a semicolon?" as I'm smashing my guitar.<br>
+                        I like to hit the gym, not just to blow off steam,<br>
+                        I actually enjoy the pain, no i never scream.<br>
+                    </p>
+
+
+                    <!-- <div class="skills-bar">
+                        <p>Adobe Photoshop</p>
+                        <div class="progress">
+                            <div class="progress-bar1" style="width:80%">80%</div>
+                        </div>
+        
+                        <p>UI Design</p>
+                        <div class="progress">
+                            <div class="progress-bar2" style="width:80%">80%</div>
+                        </div>
+        
+                        <p>Wordpress</p>
+                        <div class="progress">
+                            <div class="progress-bar3" style="width:80%">80%</div>
+                        </div>
+        
+                        <p>Graphics Design</p>
+                        <div class="progress">
+                            <div class="progress-bar4" style="width:80%">80%</div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+        <!--############################ SOCIAL ICONS ###############################-->
+        <div class="social-icons">
+            <ul>
+                <a href="https://www.linkedin.com/in/edward-yang-9997b4178/">
+                    <li><i class="fa fa-linkedin"></i></li>
+                </a>
+                <a href="https://github.com/Eyang05101991">
+                    <li><i class="fa fa-github"></i></li>
+                </a>
+                <a href="https://twitter.com/EdwardY32064857">
+                    <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.instagram.com/eddie.yang.9655/">
+                    <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="https://www.facebook.com/eddie.yang.9655">
+                    <li><i class="fa fa-facebook-f"></i></li>
+                </a>
+            </ul>
+        </div>
+        <!--############################ RESUME SECTION #####################################-->
+        <div class="resume" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Job Experiences <i class="fas fa-laptop"></i></h3>
+                        <ul class="timeline">
+                            <li class="outer">
+                                <h4><span>2018 - </span> Inventory Application <i class="fas fa-brain"></i></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Extensive communication with client to get needs and wants.</li>
+                                    <li>Using ASP .NET MVC5 created a database using empty code first migrations to keep
+                                        track of inventory.</li>
+                                    <li>Developed methods that would pull data from the database for client's needs.
+                                    </li>
+                                    <li>Added user authentication so employee access to database is limited.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - Ez-Mart<br>
+                                    <b>Duration</b> - [May 2018 to July 2018]<br>
+                                    <b>Location</b> - Tacoma, WA<br>
+                                </div>
+        
+                            </li>
+                            <li class="outer">
+                                <h4><span>2018 - </span> 9 Tap Tour <i class="fas fa-bowling-ball"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Led a small team of developers whose development tasks ranged from issues such
+                                        as debugging, testing, writing Scripts, and most of all matching each task to
+                                        fit the strength of each individual on the team.</li>
+                                    <li>Cleaned up messy code, or redundant code and organized the files so it was
+                                        easier as a team to work efficiently.</li>
+                                    <li>Built the structure to format data between Microsoft Excel and the application
+                                        we were developing.</li>
+                                    <li>Developed a more efficient sorting method to handle the bowler player placement
+                                        on the tournament rack as well as keep track of their scores each game.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - Bowlero Lanes<br>
+                                    <b>Duration</b> - [September 2018 - December 2018]<br>
+                                    <b>Location</b> - Lakewood, WA<br>
+                                </div>
+                            </li>
+                            <br>
+                            <h3>Projects <i class="fas fa-project-diagram"></i></h3>
+                            <li class="outer">
+                                <h4>Projects</h4>
+                                <ul class="pointsResume">
+                                    <li>Ecommerce Website <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                                    <li>Meteor Phaser Game <i class="fa fa-gamepad" aria-hidden="true"></i></li>
+                                    <li>Blogging Application <i class="fas fa-comments"></i></li>
+                                    <li>Planner Application <i class="fas fa-tasks"></i></li>
+                                    <li>Inventory Management Application <i class="fas fa-calculator"></i></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <h3>Volunteer/Leadership <i class="fas fa-hands-helping"></i></h3>
+                            <li class="outer">
+                                <h4><span>2006 - </span> Band Leader <i class="fa fa-users" aria-hidden="true"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Delegating specific tasks and responsibilities to each member.</li>
+                                    <li>Helping to draw out the potential from team members into the form of skills and
+                                        talents.</li>
+                                    <li>Preparing for service each week with practices, song selections, and team
+                                        discussions.</li>
+                                    <li>Serving as the representative for the team when working with senior church staff
+                                    </li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Organization</b> - Tacoma Central Presbyterian Church<br>
+                                    <b>Duration</b> - [September 2006 - Current]<br>
+                                    <b>Location</b> - Lakewood, WA<br>
+
+                                </div>
+                            </li>
+                            <li class="outer">
+                                <h4><span>2014 - </span> Discipleship Training School</h4>
+                                <ul class="pointsResume">
+                                    <li>Spent three months training in gospel outreach to share in various villages in
+                                        India.</li>
+                                    <li>Was assigned to volunteer tasks and responsibilities on the training campus such
+                                        as serving food for over 300 people.</li>
+                                    <li>While in India shared biblical scripture and testimony in front of anywhere to
+                                        10 to 400 people.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Organization</b> - Descipleship Training School (DTS)<br>
+                                    <b>Duration</b> - [October 2014 - April 2015]<br>
+                                    <b>Location</b> - Kansas City, Missouri / India <br>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        </ul>
+                        <h3 class="text-center">Job Experiences <i class="fas fa-user-tie"></i></h3>
+                        <ul class="timeline">
+                            <li class="outer">
+                                <h4><span>2017 - </span> EZ-Mart (Manager) <i class="fas fa-building"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Processing a hundred or more cash, credit, or EBT transactions daily</li>
+                                    <li>Managing all inventory ranging from soft drinks to tabacco products.</li>
+                                    <li>Experience with resolving difficult situations involving customers every other
+                                        day.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - EZ-Mart<br>
+                                    <b>Duration</b> - [April 2017 - Current]<br>
+                                    <b>Location</b> - Tacoma, WA<br>
+                                </div>
+                            </li>
+                            <li class="outer">
+                                <h4><span>2017 - </span> TCPC (Guitar Instructor) <i class="fas fa-guitar"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Taught guitar lessons for classes ranging from 3 - 11 people.</li>
+                                    <li>Showed students how to use music as a way to express themselves</li>
+                                    <li>Planned lessons and homework ahead to match individual's skill set.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - Tacoma Central Presbyterian Church<br>
+                                    <b>Duration</b> - [April 2017 - December 2017]<br>
+                                    <b>Location</b> - Tacoma, WA<br>
+                                </div>
+                            </li>
+                            <li class="outer">
+                                <h4><span>2017 - </span> TCPC (Vocal Instructor) <i class="fa fa-music" aria-hidden="true"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Taught vocal lessons to classes ranging from 2 - 6 people.</li>
+                                    <li>Showed students different techniques to warm up their vocals.</li>
+                                    <li>Engaged with students in different techniques to sing without damaging their
+                                        vocals.</li>
+                                    <li>Helped Develop confidence in each individual's voice.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - Tacoma Central Presbyterian Church<br>
+                                    <b>Duration</b> - [April 2017 - August 2017]<br>
+                                    <b>Location</b> - Tacoma, WA<br>
+                                </div>
+                            </li>
+                            <li class="outer">
+                                <h4><span>2016 - </span> AutoNation (Car Salesman) <i class="fas fa-car"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Utilizing central database to contact potential customers and inquire about
+                                        their needs.</li>
+                                    <li>Anticipating customer requirements to present the right product to the customer.
+                                    </li>
+                                    <li>Giving customized presentations to visiting customers by adapting to their
+                                        different needs.</li>
+                                    <li>Coming up with creative solutions to resolve day to day issues to complete
+                                        challenging sales.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - AutoNation Honda Of Renton<br>
+                                    <b>Duration</b> - [January 2016 - April 2017]<br>
+                                    <b>Location</b> - Renton, WA<br>
+                                </div>
+                            </li>
+                            <li class="outer">
+                                <h4><span>2012 - </span> Village Sushi (Manager) <i class="fa fa-cutlery" aria-hidden="true"></i></h4>
+                                <ul class="pointsResume">
+                                    <li>Managed payroll/tips for all front (servers, bussers, food runners) and back of house (chefs, dishwashers)</li>
+                                    <li>Key communicator between Owner and employees.</li>
+                                    <li>Planned meetings for front and back of house when issues occurred between both parties.</li>
+                                    <li>Managed customer complaints by exceeding customer's expectations.</li>
+                                </ul>
+                                <div class="bold">
+                                    <b>Company</b> - Village Sushi<br>
+                                    <b>Duration</b> - [May 2012 - August 2015]<br>
+                                    <b>Location</b> - Seattle, WA<br>
+                                </div>
+                            </li>
+                            <br>
+                            <h3>Education <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                            <li class="outer">
+                                <h4><span>2017 - </span> Clover Park Technical College <i id="icon" class="fas fa-university"></i><br> SOFTWARE ENGINEERING (AAT)
+                                    DEGREE</h4>
+                                <ul class="pointsResume">
+                                    <li>Deans List and Presidents List</li>
+                                    <li>Created many websites applications using Object Oriented Programming model using
+                                        coding languages such as C#, JavaScript, and Java to name a few</li>
+                                    <li>Experience in Source Control using Github.</li>
+                                    <li>Proficient in working on teams as well as individually in order to reach
+                                        deadlines to finish
+                                        complex web applications.
+                                    </li>
+                                </ul>
+                                <div class="bold">
+                                    <b>School</b> - Clover Park Technical College<br>
+                                    <b>Duration</b> - [April 2017 - December 2018]<br>
+                                    <b>Location</b> - Lakewood, WA<br>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--########################## Skills ##################################-->
+        <div class="skills" id="skills">
+            <div class="container">
+                <h1 class="text-center">Skills</h1>
+                <!-- <p class="text-center">
+                    "Live as if you were to die tomorrow. 
+                    <br>
+                    Learn as if you will live forever." 
+                </p> -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skills-box">
+                            <i class="fa fa-globe"></i>
+                            <span>Coding Languages</span>
+                            <p>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>C++</li>
+                                    <li>Html/CSS</li>
+                                    <li>Java</li>
+                                    <li>Javascript</li>
+                                    <li>.NET</li>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skills-box">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span>Hard Skills</span>
+                            <p>
+                                <ul>
+                                    <li>Web Development</li>
+                                    <li>Data Structures</li>
+                                    <li>Security</li>
+                                    <li>Debugging</li>
+                                    <li>Object Oriented Programming</li>
+                                    <li>Advanced Math</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skills-box">
+                            <i class="fa fa-bug"></i>
+                            <span>IDE</span>
+                            <p>
+                                <ul>
+                                    <li>Visual Studio 2017</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Atom</li>
+                                    <li>JGrasp</li>
+                                    <li>Android Studio</li>
+                                    <li>SQL Management Studio</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--################################ CONTACT #####################################-->
+        <div class="contact" id="contact">
+            <div class="container text-center">
+                <h1>Contact Me</h1>
+                <!-- <p class="text-center">
+                    I want a job you fools
+                    <br>
+                    hire me
+                </p> -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-phone"></i>
+                        <p>+1 (253) 359-5484</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-envelope"></i>
+                        <p>Yang5236@student.cptc.edu</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-internet-explorer"></i>
+                        <p>www.eddieyangyang.com</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-download"></i>
+                    <a href="ResumeDone.pdf" target="_blank">Resume</a>
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-rocket"></i>
+                    <a href="mailto:Yang5236@student.cptc.edu">Hire Me</a>
+                </button>
+            </div>
+            <div class="footer text-center">
+                <p>Made with <i class="fab fa-reddit-alien"></i> from <i class="fa fa-moon-o" aria-hidden="true"></i></p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--####################### SMOOTH SCROLL #################################-->
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+</html>
